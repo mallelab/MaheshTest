@@ -83,9 +83,9 @@ view: users {
     type: zipcode
     sql: ${TABLE}.zip ;;
   }
-dimension: full_name {
+dimension: full_Name {
   type: string
-  sql: concat (${first_name," ",${last_name});;
+  sql: concat(${first_name," ",${last_name});;
 }
   measure: count {
     type: count
